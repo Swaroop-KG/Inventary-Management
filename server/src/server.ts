@@ -17,6 +17,9 @@ async function main() {
   }
 }
 
+app.get('/',(req,res)=>{
+  res.send('API IS WORKING')
+})
 main();
 
 process.on('unhandledRejection', (err) => {

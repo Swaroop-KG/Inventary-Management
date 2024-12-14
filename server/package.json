@@ -2,9 +2,9 @@
   "name": "inventory-management-system-server",
   "version": "1.1.0",
   "description": "A full stack Inventory management system",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
-    "start": "node ./dist/server.js",
+    "start": "node ./dist/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "lint": "eslint src --ignore-path .eslintignore --ext .ts",
