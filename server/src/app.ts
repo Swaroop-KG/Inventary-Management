@@ -10,14 +10,14 @@ const app: Application = express();
 app.use(express.json());
 app.use(morgan('dev'));
 
-app.use(cors({ origin: ['https://inventary-management-frontend.vercel.app'] }));
+app.use(cors({ origin: ['http://localhost:5173', 'https://inventary-management-frontend.vercel.app'] }));
 
 // application routes
 app.use('/api/v1', rootRouter);
 app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to the MERN API' });
-  });
-  
+  res.json({ message: 'Welcome to the MERN API' });
+});
+
 
 app.use(globalErrorHandler);
 
