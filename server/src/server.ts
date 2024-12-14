@@ -16,6 +16,10 @@ async function main() {
     console.log(err);
   }
 }
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the MERN API' });
+});
+
 
 app.get('/',(req,res)=>{
   res.send('API IS WORKING')

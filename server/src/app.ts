@@ -14,6 +14,10 @@ app.use(cors({ origin: ['http://localhost:5173', 'https://inventary-management-f
 
 // application routes
 app.use('/api/v1', rootRouter);
+app.get('/', (req, res) => {
+    res.json({ message: 'Welcome to the MERN API' });
+  });
+  
 
 app.use(globalErrorHandler);
 
